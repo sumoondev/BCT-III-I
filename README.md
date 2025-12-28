@@ -34,3 +34,12 @@ Below is the daily todo list which is updated regularly.
 * [ ] Java Programming
 * [x] Probability and Statistics
 * [x] Web Application Programming
+
+<hr>
+
+## Other Task
+* [ ] Research for Minor project
+* [ ] Research for Personal project
+* [ ] Research for Yatra
+* [ ] Maintain Git repos
+
