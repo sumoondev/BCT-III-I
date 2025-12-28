@@ -4,7 +4,7 @@ This repo stores the college assignments and tasks of BCT III/I in National Coll
 <hr>
 
 # **ToDo List**
-The below list is updated regularly.
+Below is the daily todo list which is updated regularly.
 
 <hr>
 
