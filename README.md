@@ -1,5 +1,5 @@
-# College
-This repo stores the college work of National College of Engineering, of BCT III/I.
+# BCT III/I
+This repo stores the college assignments and tasks of BCT III/I in National College of Engineering.
 
 <hr>
 
