@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Q01SingleClass {
 
-    static float CalcArea(float r) {
+    static float calcArea(float r) {
         return 3.14f * r * r;
     }
 
@@ -14,7 +14,7 @@ public class Q01SingleClass {
 
         sc.close();
 
-        float area = CalcArea(radius);
+        float area = calcArea(radius);
 
         System.out.println("Area of circle is " + area);
     }
