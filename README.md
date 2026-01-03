@@ -13,15 +13,15 @@ Below is the daily todo list which is updated regularly.
 * [ ] Computer Network
 * [x] Web Application Programming
 * [ ] Computer Organization Architecture
-* [ ] Java Programming
+* [x] Java Programming
       
 <hr>
 
 ## Tutorial
 * [x] Computer Network
-* [x] Computer Organization Architecture
+* [ ] Computer Organization Architecture
 * [ ] Database Management System
-* [x] Java Programming
+* [ ] Java Programming
 * [ ] Probability and Statistics
 * [x] Web Application Programming
 
@@ -29,17 +29,17 @@ Below is the daily todo list which is updated regularly.
 
 ## Test
 * [ ] Computer Network
-* [x] Computer Organization Architecture
-* [x] Database Management System
+* [ ] Computer Organization Architecture
+* [ ] Database Management System
 * [ ] Java Programming
 * [x] Probability and Statistics
-* [x] Web Application Programming
+* [ ] Web Application Programming
 
 <hr>
 
 ## Other Task
+* [ ] DBMS project
 * [ ] Research for Minor project
 * [ ] Research for Personal project
 * [ ] Research for Yatra
 * [ ] Maintain Git repos
-
