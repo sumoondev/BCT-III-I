@@ -30,7 +30,7 @@ Below is the daily todo list which is updated regularly.
 ## Test
 * [ ] Computer Network
 * [ ] Computer Organization Architecture
-* [ ] Database Management System
+* [x] Database Management System
 * [ ] Java Programming
 * [x] Probability and Statistics
 * [ ] Web Application Programming
