@@ -28,7 +28,7 @@ Below is the daily todo list which is updated regularly.
 <hr>
 
 ## Test
-* [ ] Computer Network
+* [x] Computer Network
 * [ ] Computer Organization Architecture
 * [x] Database Management System
 * [ ] Java Programming
