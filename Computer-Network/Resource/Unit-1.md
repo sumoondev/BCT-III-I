@@ -117,3 +117,87 @@
     - <b>Disadvantage</b>
         - In case of server failure, entire network will be failed.
         - Maintaining server is very costly.
+
+## Protocols and Standards
+- Protocols are *set of rules* that are used in digital communication to connect network devices and exchange information between them. 
+- Protocols determine the format, timing, sequencing, and error control in data communication.
+- Without protocols, receiver cannot informatively read the data being sent by the sender. (not able to rebuild the actual information)
+- **Protocols control following aspects:**
+    - How the Physical connection is built
+    - How computers are connected to the network
+    - How are data formatted for transmission
+    - How that data is sent
+    - How to deal with error
+- These network rules are created and maintained by many different organizations and committees. Included in these groups are the *Institute of Electrical and Electronic Engineers (IEEE)*, *American National Standards Institute (ANSI)*, *Telecommunications Industry Association (TIA)*, *Electronic Industries Alliance (EIA)* and the *International Telecommunications Union (ITU)*.
+- eg:
+    - TCP/IP    *Note: TCP creates connection, IP used for communication of data*
+    - HTTP
+    - SMTP
+    - FTP
+    - POP
+
+## OSI(Open Systems Interconnection) Reference model 
+- This model is a framework that is used to understand how information travels throughout a network.
+- This model explains how packets travel throught various layers to another device on the network, even if the sender and receiver have different type of network media.
+```
+     Application Layer
+            |
+    Presentation Layer
+            |
+       Session Layer
+            |
+      Transport Layer
+            |
+       Network Layer
+            |
+      Data Link Layer
+            |
+      Physical Layer
+```
+- **Layer 1 (Physical Layer)**
+    - Handles the transmission of raw bits over the physical medium
+    - Defines the type of cable (UTP, STP, fiber, coaxial) and their physical property
+    - Specifies connectors and other physical interface
+    - Determines the voltage level used to represent data
+    - Defines the data rate for transmission
+    - Protocol Data Unit(PDU): Bit
+- **Layer 2 (Data Link Layer)**
+    - It is a direct link control on the network
+    - Provides reliable data transfer over the link
+    - Physical addressing
+    - Network topology
+    - Error notification and flow control
+    - Protocol Data Unit(PDU): Frame
+- **Layer 3 (Network Layer)**
+    - Network address
+    - Best path determination
+    - Data transmission between subnet
+    - Protocol Data Unit(PDU): Packet
+- **Layer 4 (Transport Layer)**
+    - End to End connection
+    - Process are addressed 
+    - Transportation issue between the host
+    - Reliable data transfer between the host
+    - Establish connection between the host
+    - Error detection and recovery
+    - Protocol Data Unit: Segement
+- **Layer 5 (Session Layer)**
+    - Maintains user's session
+    - Token management
+    - Track all the event through the use
+    - Establish and terminate session
+    - Handles the exchange of information to initiate dialogs, keep them active and to restart sessions
+    - PDU: Data
+- **Layer 6 (Presentation Layer)**
+    - Data representation
+    - Makes sure the data is readable to the application
+    - Format data
+    - Data structure selection
+    - Helps application to interpret data: encryption, compression,etc.
+    - PDU: Data
+- **Layer 7 (Application Layer)**
+    - Network application program generate data streams on the network
+    - Application donot need to control code devices
+    - Provide different network services to the user
+    - Email, http, www, smtp, etc.
+    - PDU: Data 
