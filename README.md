@@ -33,7 +33,7 @@ Below is the daily todo list which is updated regularly.
 * [x] Database Management System
 * [ ] Java Programming
 * [x] Probability and Statistics
-* [ ] Web Application Programming
+* [x] Web Application Programming
 
 <hr>
 
