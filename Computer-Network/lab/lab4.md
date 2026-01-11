@@ -16,6 +16,61 @@
 	- Enabled using the appropriate configuration commands
 
 ## Procedure
+
+<img src="image/lab4.1.png" width=650px height="400px">
+<p> Fig 4.1: Network Design</p>
+<hr>
+
+1. Network Topology Design
+	- In Cisco Packet Tracer, port labels were enabled for clarity.
+	- Two routers were placed and connected to each other using a straight-through cable.
+	- Each router was connected to a PC through a separate interface.
+2. Router 0 Configuration
+	- Router 0 was accessed through the CLI.
+	- From User exe mode, Privileged mode was entered and then to global configuration mode.
+	- The router hostname was changed to Router0 and an enable secret password was set.
+	- The FastEthernet interface connected to Router 02 was assigned an IP address in the same network:
+	```
+		- Router0(config-if)#	ip address 192.168.1.1 255.255.255.0
+	```
+	- Another FastEthernet interface was configured with a different IP address to connect a PC (PC0):
+	```
+		- Router0(config-if)# 	ip address 192.168.2.1 255.255.255.0
+	```
+	- Both interface were enabled and configuration was saved to NVRAM.
+3. Router 1 Configuration
+	- Router 1 was configured using similar steps.
+	- The hostname was set to Router1 and secret password was configured.
+	- The interface connecting to Router 0 was assigned an IP address within the same subnet:
+	```
+		- Router1(config-if)#	ip address 192.168.1.2 255.255.255.0
+	```
+	- Another FastEthernet interface was configured with a different IP address to connect a PC (PC1):
+	```
+		- Router1(config-if)# 	ip address 192.168.3.1 255.255.255.0
+	```
+	- Both interface were enabled and configuration was saved.
+4. PC Configuration
+	- Each PC were configured with a static IP address as below:
+		- <ins>PC0</ins>
+		```
+			- ip address	 : 192.168.2.2
+			- subnet mask	 : 255.255.255.0
+			- default gateway: 192.168.2.1
+		```
+		- <ins>PC1</ins>
+		```
+			- ip address	 : 192.168.3.2
+			- subnet mask	 : 255.255.255.0
+			- default gateway: 192.168.3.1
+		```
+5. Testing and Verification
+	- Connectivity between Router0 and PC0, and Router1 and PC1 was tested using ping command.
+	- Router to Router configuration was verified using appropriate show command.
+
+<!-- Not required in report -->
+
+<!-- ## Procedure
 *For better visualization, not required in report.*<br>
 *1. press cltr + r*<br>
 *2. [x] port label always show*<br>
@@ -99,4 +154,4 @@
 
 ### Test using PC
 * Using command Prompt
-* use ping commands 
+* use ping commands  -->
