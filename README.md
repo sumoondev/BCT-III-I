@@ -11,7 +11,7 @@ Below is the daily todo list which is updated regularly.
 ## Lab Work
 * [x] Database Management System
 * [ ] Computer Network
-* [x] Web Application Programming
+* [ ] Web Application Programming
 * [ ] Computer Organization Architecture
 * [x] Java Programming
       
@@ -29,9 +29,9 @@ Below is the daily todo list which is updated regularly.
 
 ## Test
 * [x] Computer Network
-* [ ] Computer Organization Architecture
+* [x] Computer Organization Architecture
 * [x] Database Management System
-* [ ] Java Programming
+* [x] Java Programming
 * [x] Probability and Statistics
 * [x] Web Application Programming
 
