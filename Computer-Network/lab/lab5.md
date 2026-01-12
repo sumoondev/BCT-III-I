@@ -43,5 +43,5 @@
             ip route 192.168.2.0 255.255.255.0 192.168.1.1
         ```
 3. Testing and Verification
-    - Connectivity was tested using the ping command from PC1 to PC2 and vice versa.
+    - Connectivity was tested using the ping command from PC0 to PC1 and vice versa.
     - Successful responses confirmed correct static route configuration.
