@@ -32,8 +32,8 @@
     - The basic routing configuration from lab4 were reused, here the configurations were:
         - Two routers were already configured with IP addresses on their interfaces.
         - PCs connected to Router0 and Router1 were assigned static IP addresses and default gateways.
-2. Static Router Configuration
-    - Static routes were manually configured on both routers to reach the network connected to another router:
+2. Static Route Configuration
+    - Static route were manually configured on both routers to reach the network connected to another router:
         - <ins>Router0</ins>
         ```
             ip route 192.168.3.0 255.255.255.0 192.168.1.2
