@@ -57,21 +57,21 @@
     - RIP routing was configured in all three routers:
     ```c
         Router 1
-        (config)#       router rip
-        (config-rip)#   network 192.168.2.0
-        (config-rip)#   network 192.168.3.0
+        (config)#           router rip
+        (config-router)#    network 192.168.2.0
+        (config-router)#    network 192.168.3.0
 
         Router 2
-        (config)#       router rip
-        (config-rip)#   network 192.168.3.0
-        (config-rip)#   network 192.168.4.0
-        (config-rip)#   network 192.168.5.0
+        (config)#           router rip
+        (config-router)#    network 192.168.3.0
+        (config-router)#    network 192.168.4.0
+        (config-router)#    network 192.168.5.0
 
         Router 3
-        (config)#       router rip
-        (config-rip)#   network 192.168.1.0
-        (config-rip)#   network 192.168.2.0
-        (config-rip)#   network 192.168.4.0
+        (config)#           router rip
+        (config-router)#    network 192.168.1.0
+        (config-router)#    network 192.168.2.0
+        (config-router)#    network 192.168.4.0
     ```
 
 5. Testing and Verification
