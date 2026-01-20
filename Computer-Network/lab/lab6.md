@@ -30,10 +30,8 @@
 
 1. Network Configuration
     - In Cisco packet tracer, the network topology was designed as shown above.
-    - Router 1 to Router 2 and Router 1 to Router 3 were connected using cross-over cable in fast-ethernet port.
-    - In Router 2 and Router 3, ethernet port was extending by interfacing WIC-1ENET (Ethernet Interfacing Card).
-    - Router 2 and Router 3 was connected using cross-over cable in ethernet port.
-    - A switch with two PCs were added to Router 2 and Router 3 all connected using straight-through cable.
+    - In Router 2 and Router 3, ethernet port was extended by interfacing WIC-1ENET (Ethernet Interfacing Card).
+    - Router 2 and 3 were interfaced through ethernet port.
 
 2. Router Configuration
 	- Each router was configured with IP addresses on all active interfaces as shown in the figure.
