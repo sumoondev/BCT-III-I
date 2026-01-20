@@ -15,7 +15,7 @@
     - Open Shotest Path First (OSPF): A link-stable protocol for more complex networks.
     - Border Gateway Protocol (BGP): Used between different networks (Autonomous Systems) on the internet.
 
-### Routing Infromation Protocol (RIP)
+### Routing Information Protocol (RIP)
 - RIP is designed to help routers determine the best path for sending data packets across a network. 
 - It uses hop count as its routing metric and is primarily used in small to medium-sized networks due to its scalability limitations.
 - It operates at the Network Layer (Layer 3) of the OSI model and maintains routing tables on each router.
