@@ -81,6 +81,6 @@
 
 *Yo discussion ma lekheko ramro*
 disadv:
-	- only decrease hop not the speed of transfer
-	- 300s of wait if any connection is lost (count infinity problem) due to which package may be dropped
-	- cannot hop over 15 routers 
+- only decrease hop not the speed of transfer
+- 300s of wait if any connection is lost (count infinity problem) due to which package may be dropped
+- cannot hop over 15 routers 
