@@ -43,58 +43,45 @@
     - Router 2 and Router 3 were configured as DHCP servers.
     - DHCP pool were created through following commands in routers CLI:
     ```c
-        Router 2                        Router 3
-        // in global configuration mode
+        Router 2
         (config)#       ip dhcp pool mypool                 // mypool is the pool name
-        (dhcp-config)#  network 192.168.5.0 255.255.255.0
+        (dhcp-config)#  network 192.168.5.0 255.255.255.0   
+        (dhcp-config)#  default-router 192.168.5.1          // default gateway
 
-
-        // kaam chaliraxa ekxin ma complete post garxu 😘
-
+        Router 3
+        (config)#       ip dhcp pool mypool                 
+        (dhcp-config)#  network 192.168.1.0 255.255.255.0   
+        (dhcp-config)#  default-router 192.168.1.1          
     ```
-	**Router 2**
-	- enable
-	- config terminal
-	- ip dhcp pool mypool
-	- network 192.168.5.0 255.255.255.0
-	- default-router 192.168.5.1
+    - PCs were configured to obtain IP addresses automatically via DHCP.
 
-	**Router 3**
-	- enable
-	- config terminal
-	- ip dhcp pool mypool
-	- network 192.168.1.0 255.255.255.0
-	- default-router 192.168.1.1
+4. Dynamic Routing configuration using RIP
+    - RIP routing was configured in all three routers:
+    ```c
+        Router 1
+        (config)#       router rip
+        (config-rip)#   network 192.168.2.0
+        (config-rip)#   network 192.168.3.0
 
-4. Set DHCP ip address to pc
+        Router 2
+        (config)#       router rip
+        (config-rip)#   network 192.168.3.0
+        (config-rip)#   network 192.168.4.0
+        (config-rip)#   network 192.168.5.0
 
-5. Dynamic Routing with RIP v2
-	**Router 1**
-	- enable
-	- config terminal
-	- router rip 
-	- network 192.168.2.0
-	- network 192.168.3.0
+        Router 3
+        (config)#       router rip
+        (config-rip)#   network 192.168.1.0
+        (config-rip)#   network 192.168.2.0
+        (config-rip)#   network 192.168.4.0
+    ```
 
-	**Router 2**
-	- enable
-	- config terminal
-	- router rip 
-	- network 192.168.3.0
-	- network 192.168.5.0
-	- network 192.168.4.0
+5. Testing and Verification
+    - IP addresses assigned to PCs were verified.
+    - Connectivity between PCs across different networks was tested using the ping command.
+    - Hops were tested via using command tracert command in PC.
 
-	**Router 3**
-	- enable
-	- config terminal
-	- router rip 
-	- network 192.168.1.0
-	- network 192.168.2.0
-	- network 192.168.4.0
-
-
-
-
+*Yo discussion ma lekheko ramro*
 disadv:
 	- only decrease hop not the speed of transfer
 	- 300s of wait if any connection is lost (count infinity problem) due to which package may be dropped

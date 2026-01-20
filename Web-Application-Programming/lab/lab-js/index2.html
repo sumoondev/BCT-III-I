@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="project1">
+        <h1>Project 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo incidunt, inventore vero ipsum earum dolorum enim corrupti reprehenderit error, pariatur in distinctio sequi magni quos accusamus eius non beatae qui suscipit corporis vitae, quidem iure modi rerum. Temporibus sapiente dolore corrupti eius. Sint corporis suscipit modi quos. Qui fugit pariatur doloribus consequatur doloremque cumque placeat repellendus beatae quisquam earum omnis, sed deleniti, officiis dolorum suscipit? Modi magni suscipit voluptates repellat ea ipsum ex impedit unde velit. Fugiat veritatis, facere cum, illum quos nam dolorem quia, molestiae consectetur assumenda incidunt laudantium! Laboriosam autem soluta cupiditate nobis odit dolore voluptatibus repellat natus.</p>
+    </div>
+    <button onclick="showMessege()">Show message</button><br><br>
+    <button onclick="askConfirmation()">Confirm Deletion</button><br><br>
+    <button onclick="verifyDeletion()">Type Project Name to Delete Project</button>
+
+    <script>
+        function showMessege() {
+            alert("This is message shown");
+        }
+
+        function askConfirmation() {
+            const isConfirmed = confirm("Are you sure to delete project");
+            isConfirmed ? verifyDeletion() : alert("Deletion cancelled");
+        }
+
+        function verifyDeletion() {
+            const projectName = prompt("Enter project name to proceed deletion");
+            if(projectName == 'Project 1') document.getElementById("project1").remove();
+            else alert("project name did not match")
+        }
+    </script>
+</body>
+</html>

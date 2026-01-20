@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" id="myform" onsubmit="handleSubmit(event)">
+        Gender: 
+        <input type="radio" name="gender" value="M">&nbsp;Male &nbsp;
+        <input type="radio" name="gender" value="F">&nbsp;Female
+        <br>
+        Hobbies:
+        <input type="checkbox" name="hobbies" value="tableTennis"> &nbsp;Table Tennis&nbsp;
+        <input type="checkbox" name="hobbies" value="Basketball">&nbsp;Basketball
+        <br>
+        Appointment:
+        <input type="datetime-local" name="appointment" id="appointment">
+        <br>
+        Country:
+        <select name="country" id="country">
+            <option value="">---Select---</option>
+            <option value="nepal">Nepal</option>
+            <option value="usa">USA</option>
+        </select>
+        <br>
+        <input type="file" name="file" id="file">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const form = document.querySelector("#myform");
+            const formData = new FormData(form);
+
+            const gender = formData.get("gender");
+
+            const hobbies = formData.getAll("hobbies");
+
+            const appointment = formData.get("appointment");
+
+            const country = formData.get("country");
+
+            const file = formData.get("file");
+
+            if(!gender || !hobbies.length || !appointment || !country) {
+                alert("All fields are required");
+                return;
+            }
+
+            const now = new Date();
+            const appointmentDate = new Date(appointment);
+
+            if(appointmentDate < now){
+                alert("Appointment cant be in past");
+                return;
+            }
+
+            now.setMonth(now.getMonth()+1)
+
+            if(appointmentDate > now){
+                alert("Noooo")
+                return;
+            }
+
+            const maxsize = 2*1024*1024;
+
+            const allowedType = ["application/pdf","image/jpeg","image/png"]
+
+            if(!allowedType.includes(file.type)) {
+                alert("Not supported");
+                return;
+            }
+
+            if(file.size > maxsize) {
+                alert("Too large file")
+                return;
+            }
+
+            console.log({gender}, {hobbies}, {appointment}, {country})
+        }
+    </script>
+</body>
+</html>

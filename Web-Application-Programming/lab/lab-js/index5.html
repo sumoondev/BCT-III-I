@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("start");
+        // setTimeout(()=> console.log("when"),0);
+        // console.log("end");
+
+        function fetchData(dataIdentifier, getNextData) {
+        setTimeout(() => {
+            console.log("data of ", dataIdentifier);
+            if (getNextData) {
+            getNextData();
+            }
+        }, 2000);
+        }
+
+        fetchData("user", () => {
+        fetchData("post", () => {
+            fetchData("comment");
+        });
+        });
+    </script>
+</body>
+</html>

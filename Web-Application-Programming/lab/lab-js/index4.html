@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe src="about:blank"></iframe>
+    <button onclick="loadFrame()">Load</button>
+
+    <script>
+        function loadFrame() {
+            const iframe = document.querySelector("iframe");
+            iframe.src = "data:text/html,<h1>Injected using JS</h1>";
+        }
+
+    </script> -->
+<!-- 
+    <script>
+        window.localStorage.setItem("username","sumoon");
+
+        console.log(localStorage.getItem("username"));
+    </script> -->
+
+    <button onclick="handleClick()">Click me</button>
+    <button id="btn2">Click me</button>
+    <input type="text">
+
+    <script>
+        function handleClick() {
+            alert("btn clicked")
+        }
+
+        const btn2 = document.querySelector("#btn2");
+        btn2.addEventListener('click', ()=>{
+            alert('btn2 clicked');
+        });
+
+        const input = document.querySelector("input");
+        input.addEventListener("focus",() => console.log("input focuesd"))
+        input.addEventListener("blur", () => console.log("input unfocuesd"))
+        input.addEventListener("keypress", (event) => console.log("key pressed", event.key, event.type));
+    </script>
+</body>
+</html>
