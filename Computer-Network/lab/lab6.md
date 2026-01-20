@@ -12,7 +12,7 @@
 - Unlike static routing, dynamic routing adapts to network topology changes without manual intervention.
 - Some of the common protocols used for dynamic routing:
     - Routing Information Protocol (RIP): Older protocol for smaller network.
-    - Open Shotest Path First (OSPF): A link-stable protocol for more complex networks.
+    - Open Shortest Path First (OSPF): A link-stable protocol for more complex networks.
     - Border Gateway Protocol (BGP): Used between different networks (Autonomous Systems) on the internet.
 
 ### Routing Information Protocol (RIP)
